@@ -1,0 +1,16 @@
+name: Cooper Wainczak
+
+markdown: kramdown
+
+url: https://cwainczak.com
+
+plugins:
+ - jekyll-sitemap
+ - jemoji
+
+gems:
+ - jekyll-sitemap
+ - jemoji
+
+sass:
+  style: :expanded
