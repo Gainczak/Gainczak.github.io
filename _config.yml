@@ -2,6 +2,8 @@ name: Cooper Wainczak
 
 markdown: kramdown
 
+permalink: /work/:title
+
 url: https://cwainczak.com
 
 plugins:
