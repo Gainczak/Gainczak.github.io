@@ -1,0 +1,9 @@
+---
+layout: core
+
+title: Work
+---
+
+{% for post in site.posts %}
+    <a href="{{ post.url }}"><p>{{ post.title }}</p></a>
+{% endfor %}

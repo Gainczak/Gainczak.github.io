@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+body
+{
+	background-color: #333;
+    color: #F9F9F9;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+	margin: 2em;
+}
+
+a, a:visited, a:focus, .post a svg, .post a svg:visited, .post a svg:focus
+{
+    color: #A77DC2;
+    fill: #A77DC2;
+    text-decoration: none;
+    transition: .15s;
+}
+
+a:hover, .post a svg:hover
+{
+    color: #86649B;
+    fill: #86649B;
+}
+
+svg
+{
+    width: 7.5vw;
+}
+
+a img
+{
+    border: 0;
+}
+
+header h1
+{
+	margin: 0;
+}
+
+header ul
+{
+    list-style: none;
+    
+    text-align: justify;
+
+    padding: 0;
+}
+
+header ul li
+{
+    display: inline;
+    margin: 1vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 a, nav h1 a:visited, nav h1 a:focus, nav h1 a:hover
+{
+    color: #111;
+}
+
+footer ul
+{
+    list-style: none;
+
+	padding: 0;
+	margin: 0;
+}
+
+footer ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 1vw;
+}
+
+footer svg
+{
+    width: 2vw;
+}
+
+.container, .content
+{
+    position: relative;
+	overflow: auto;
+
+	padding: 2.5vw;
+
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+    max-width: 65vw;
+}
+
+.content
+{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.content ul
+{
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.content ul li
+{
+	list-style: none;
+	display: inline-block;
+	width: 33%;
+	height: 15vw;
+}
+
+.skinny
+{
+	padding-left: 3vw;
+	padding-right: 3vw;
+}
+
+.quote
+{
+    margin: auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    max-width: 66%;
+}
+
+.twocol
+{
+	width: 50%;
+	overflow: auto;
+	float: left;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.excerpt
+{
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.insert
+{
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.insert h1, .insert h2, .insert h3, .insert h4, .insert h5, .insert h6, .insert p
+{
+    color: #F9F9F9;
+}
+
+.darken
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.post
+{
+    width: 64%;
+	overflow: auto;
+	float: left;
+	padding-right: 2%;
+}
+
+.post svg
+{
+    width: 5vw;
+}
+
+.screenshots
+{
+    width: 32%;
+	overflow: auto;
+	float: left;
+	padding-left: 2%;
+}
+
+.companylogos
+{
+    margin: 1vw;
+}
+
+.banner
+{
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner .overlay
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.0;
+    z-index: 1;
+    transition: .15s;
+}
+
+.banner:hover > .overlay
+{
+	opacity: 0.5;
+}
+
+.banner .information
+{
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    position: absolute;
+    opacity: 0.0;
+    z-index: 2;
+    transition: .15s;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+    fill: #F9F9F9;
+    box-sizing: border-box;
+	font-size: 0.65vw;
+	overflow: hidden;
+}
+
+.logo
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner .information h1, .banner .information h2, .banner .information h3, .banner .information h4, .banner .information h5, .banner .information h6, .banner .information p
+{
+    color: #F9F9F9;
+	margin: 1em;
+}
+
+.banner .information a, .banner .information a:visited, .banner .information a:focus, .banner .information a:hover
+{
+    fill: #F9F9F9;
+}
+
+.banner:hover > .information
+{
+	opacity: 1;
+}
+
+.gamebanner
+{
+    height: 32vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.gamebanner h1, .gamebanner h2, .gamebanner h3, .gamebanner h4, .gamebanner h5, .gamebanner h6, .gamebanner p {
+    color: #F9F9F9;
+}
+
+@media (max-width: 800px)
+{
+    body
+    {
+        font-size: 3vw;
+    }
+
+	header ul
+	{
+		text-align: center;
+	}
+
+	header ul li
+	{
+		margin: 2vw;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+    nav
+    {
+        display: initial;
+    }
+
+    svg
+    {
+        width: 20vw;
+    }
+
+    .container, .content
+    {
+        max-width: 85vw;
+
+        padding: 5vw;
+    }
+
+	.content
+	{
+		padding-left: 0;
+		padding-right: 0;
+	
+		max-width: 100%;
+	}
+
+	.content ul li
+	{
+		display: inline;
+		width: 100%;
+		height: 15vw;
+	}
+
+    .quote
+    {
+        max-width: 75%;
+
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+    }
+
+    .excerpt
+    {
+        padding-top: 0.75vw;
+        padding-bottom: 0.75vw;
+    }
+
+    .insert
+    {
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+    }
+
+    .banner
+    {
+        height: 75vw;
+        font-size: 2vw;
+    }
+
+    .banner .information
+    {
+        padding: 5%;
+		font-size: 2.5vw;
+    }
+
+    .post
+    {
+		width: 100%;
+        padding: 0;
+    }
+    
+    .screenshots
+    {
+		width: 100%;
+        padding: 0;
+    }
+    
+    .post svg
+    {
+        width: 10vw;
+    }
+
+    footer ul li
+    {
+        margin: 2vw;
+    }
+
+    footer svg
+    {
+        width: 5vw;
+    }
+
+    .banner .overlay
+    {
+        opacity: 0.65;
+    }
+
+    .banner .information
+    {
+        opacity: 1.0;
+    }
+
+    .companylogos
+    {
+        margin: 2vw;
+    }
+
+    .gamebanner
+    {
+        height: 48vw;
+    }
+}
